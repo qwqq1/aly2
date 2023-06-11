@@ -7,8 +7,8 @@ RUN apt install -y curl wget sudo tar git
 #RUN git clone https://github.moeyy.xyz/https://github.com/Biubush/alys
 RUN wget https://github.moeyy.xyz/https://github.com/Biubush/alys/releases/download/v0.0.54/alys_v0.0.54_linux_amd64.tar.gz
 RUN tar xf alys_v0.0.54_linux_amd64.tar.gz
-#COPY *.sh .
-#RUN chmod a+x my.sh
+COPY *.sh .
+RUN chmod a+x my.sh
 #RUN adduser --disabled-password --gecos '' admin
 #RUN adduser admin sudo
 #RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
@@ -18,5 +18,5 @@ RUN tar xf alys_v0.0.54_linux_amd64.tar.gz
 #RUN chmod -R 777 /home
 #USER admin
 EXPOSE 8587
-RUN cd alys_v0.0.54_linux_amd64 && chmod +x alys && ./alys
-#CMD ["./my.sh"]
+#RUN cd alys_v0.0.54_linux_amd64 && chmod +x alys && ./alys
+CMD ["./my.sh"]
