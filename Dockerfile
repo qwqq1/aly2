@@ -5,7 +5,7 @@ RUN apt-get update -y && apt-get upgrade -y && apt-get install -y sudo
 RUN apt install -y curl wget sudo tar git
 #RUN pip3 install aligo flask apscheduler flask_sqlalchemy
 #RUN git clone https://github.moeyy.xyz/https://github.com/Biubush/alys
-RUN wget https://github.com/Biubush/alys/releases/download/v0.0.54/alys_v0.0.54_linux_amd64.tar.gz
+RUN wget https://kgithub.com/https://github.com/Biubush/alys/releases/download/v0.0.54/alys_v0.0.54_linux_amd64.tar.gz
 RUN tar xf alys_v0.0.54_linux_amd64.tar.gz
 #COPY *.sh .
 #RUN chmod a+x my.sh
