@@ -1,5 +1,4 @@
 #!/bin/bash
 
-ls
-cd ./alys_v0.0.54_linux_amd64
+cd ./alys_v1.0.0_linux_amd64
 exec ./alys
