@@ -6,7 +6,7 @@ RUN apt install -y curl wget sudo tar git
 #RUN pip3 install aligo flask apscheduler flask_sqlalchemy
 #RUN git clone https://github.moeyy.xyz/https://github.com/Biubush/alys
 RUN wget https://github.moeyy.xyz/https://github.com/Biubush/alys/releases/download/v1.0.0/alys_v1.0.0_linux_amd64.tar.gz
-RUN tar xf alys_v0.0.54_linux_amd64.tar.gz
+RUN tar xf alys_v1.0.0_linux_amd64.tar.gz
 COPY *.sh .
 RUN chmod a+x my.sh
 #RUN adduser --disabled-password --gecos '' admin
