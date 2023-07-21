@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd ./alys
+cd ./myself
 exec ./alys
